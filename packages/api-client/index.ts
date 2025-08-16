@@ -1,1 +1,1 @@
-export { default as apiClient } from "./axios-instance";
+export { default as apiClient } from "./axios-instance.js";
