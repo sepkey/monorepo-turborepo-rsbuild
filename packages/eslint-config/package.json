@@ -1,0 +1,11 @@
+{
+  "name": "@repo/eslint-config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "devDependencies": {
+    "@fullstacksjs/eslint-config": "12.0.0",
+    "eslint": "9.25.0"
+  }
+}

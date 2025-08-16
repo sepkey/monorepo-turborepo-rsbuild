@@ -1,0 +1,13 @@
+{
+  "extends": "../../packages/typescript-config/react-library.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*", "rsbuild.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
