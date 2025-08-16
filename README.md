@@ -25,31 +25,37 @@ RSbuild for fast bundling.
 ### Prerequisites
 
 - Node.js 18+
-- npm (or yarn/pnpm)
+- pnpm (recommended package manager for this monorepo)
 
 ### Installation
 
-1. Install dependencies:
+1. Install pnpm globally (if not already installed):
 
 ```bash
-npm install
+npm install -g pnpm
 ```
 
-2. Start the development server:
+2. Install dependencies:
 
 ```bash
-npm run dev
+pnpm install
+```
+
+3. Start the development server:
+
+```bash
+pnpm dev
 ```
 
 This will start the React app at `http://localhost:3000`
 
 ### Available Scripts
 
-- `npm run dev` - Start development servers for all apps
-- `npm run build` - Build all apps and packages
-- `npm run lint` - Lint all apps and packages
-- `npm run type-check` - Run TypeScript type checking
-- `npm run clean` - Clean all build outputs
+- `pnpm dev` - Start development servers for all apps
+- `pnpm build` - Build all apps and packages
+- `pnpm lint` - Lint all apps and packages
+- `pnpm type-check` - Run TypeScript type checking
+- `pnpm clean` - Clean all build outputs
 
 ## Features
 
@@ -80,4 +86,4 @@ This will start the React app at `http://localhost:3000`
 - **Frontend**: React + TypeScript
 - **Bundler**: RSbuild (Rspack)
 - **Linting**: ESLint + TypeScript ESLint
-- **Package Manager**: npm (workspaces)
+- **Package Manager**: pnpm (workspaces)
