@@ -1,11 +1,11 @@
 import { FileTextOutlined, HomeOutlined } from "@ant-design/icons";
-import DashboardLayout from "@repo/ui/components/layout/index";
+import { DashboardLayout } from "@repo/ui/components/layout/index";
 
 function App() {
   return (
-    <div >
+    <div>
       <DashboardLayout
-      logoImg="./logo-two.svg"
+        logoImg="./logo-two.svg"
         menuItems={[
           {
             key: "./",

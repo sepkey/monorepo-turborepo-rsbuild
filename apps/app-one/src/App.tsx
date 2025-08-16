@@ -1,5 +1,5 @@
 import { HomeOutlined, UserOutlined } from "@ant-design/icons";
-import DashboardLayout from "@repo/ui/components/layout/index";
+import { DashboardLayout } from "@repo/ui/components/layout/index";
 import { useEffect } from "react";
 import { getUsers } from "./services";
 
