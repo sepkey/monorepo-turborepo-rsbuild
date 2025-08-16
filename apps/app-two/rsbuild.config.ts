@@ -11,6 +11,14 @@ export default defineConfig({
     entry: {
       index: "./src/index.tsx",
     },
+    define: {
+      "process.env.REACT_APP_API_URL": JSON.stringify(
+        process.env.REACT_APP_API_URL || "https://reqres.in/api"
+      ),
+      "process.env.REACT_APP_API_KEY": JSON.stringify(
+        process.env.REACT_APP_API_KEY || "reqres-free-v1"
+      ),
+    },
   },
   output: {
     distPath: {

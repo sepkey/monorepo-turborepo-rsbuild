@@ -4,12 +4,29 @@ import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
 export default defineConfig({
   plugins: [pluginReact(), pluginTypeCheck()],
+  tools: {
+    rspack: {
+      resolve: {
+        extensionAlias: {
+          ".js": [".ts", ".tsx", ".js"],
+        },
+      },
+    },
+  },
   html: {
     template: "./public/index.html",
   },
   source: {
     entry: {
       index: "./src/index.tsx",
+    },
+    define: {
+      "process.env.REACT_APP_API_URL": JSON.stringify(
+        process.env.REACT_APP_API_URL || "https://reqres.in/api"
+      ),
+      "process.env.REACT_APP_API_KEY": JSON.stringify(
+        process.env.REACT_APP_API_KEY || "reqres-free-v1"
+      ),
     },
   },
   output: {
